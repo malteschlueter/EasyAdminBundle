@@ -43,7 +43,7 @@
 </head>
 
 {% block body %}
-    <body id="{% block body_id %}{% endblock %}" class="ea {% block body_class %}{% endblock %}">
+    <body {% block body_attributes %}id="{% block body_id %}{% endblock %}" class="ea {% block body_class %}{% endblock %}"{% endblock %}>
     {% block javascript_page_layout %}
         <script>
             document.body.classList.add(
